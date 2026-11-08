@@ -1,0 +1,7 @@
+name: lab_dart
+description: Погодний щоденник міст - лабораторна робота (варіант 1, рівень "задовільно").
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: ^3.0.0
