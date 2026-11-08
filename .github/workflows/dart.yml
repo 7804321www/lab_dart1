@@ -1,0 +1,12 @@
+   name: Dart CI
+   on: [push, pull_request]
+   jobs:
+     check:
+       runs-on: ubuntu-latest
+       steps:
+         - uses: actions/checkout@v4
+         - uses: dart-lang/setup-dart@v1
+         - run: dart pub get
+         - run: dart analyze
+         - name: Smoke test
+           run: printf '2\nKyiv\n12,5\nsunny\n2026-11-05\n1\n0\n' | dart run bin/main.dart
