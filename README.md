@@ -12,5 +12,5 @@
 - `lib/models/weather_entry.dart` - модель, `toJson()` / `fromJson()` / `toString()`
 - `lib/repositories/entry_repository.dart` - читання/запис `data.json`
 
-## API варіанта (використовується на рівні "добре")
+## API варіанта: Open-Meteo (у цій версії не використовується)
 https://api.open-meteo.com/v1/forecast?latitude=50.75&longitude=25.34&current=temperature_2m
